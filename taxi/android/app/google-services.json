@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "584951454653",
+    "project_id": "taxi-86a28",
+    "storage_bucket": "taxi-86a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584951454653:android:0cb41e2b723a52c0a4d0d4",
+        "android_client_info": {
+          "package_name": "com.taxi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXtmlm94M63ebKSm3K5H8bXdzgdcBGS4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
