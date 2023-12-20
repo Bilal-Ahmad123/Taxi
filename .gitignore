@@ -38,6 +38,7 @@ local.properties
 #
 /taxi/node_modules/
 /taxi-backend/node_modules/
+/taxi/.env/
 
 npm-debug.log
 yarn-error.log

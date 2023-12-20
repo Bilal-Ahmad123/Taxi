@@ -26,7 +26,7 @@ import OptionGroup from 'react-native-optiongroup';
 /**
  * You need to fill in a Google API Key that enables the Direction API.
  */
-const GOOGLE_API_KEY = 'AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks';
+const GOOGLE_API_KEY = process.env.GOOGLE_MAP_API;
 
 /**
  * Set to true to use the controls methods instead of props

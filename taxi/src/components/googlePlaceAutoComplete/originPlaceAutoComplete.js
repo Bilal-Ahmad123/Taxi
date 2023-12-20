@@ -1,6 +1,9 @@
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import * as React from 'react';
+
 const GooglePlacesInput = () => {
+  const apiKey = process.env.GOOGLE_MAP_API;
+
   return (
     <GooglePlacesAutocomplete
       placeholder="Search"
@@ -25,7 +28,7 @@ const GooglePlacesInput = () => {
         console.log(data, details);
       }}
       query={{
-        key: 'AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks',
+        key: apiKey,
         language: 'en',
       }}
     />

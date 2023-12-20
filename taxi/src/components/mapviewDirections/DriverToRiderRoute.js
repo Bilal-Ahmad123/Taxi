@@ -20,6 +20,7 @@ export default function DriverToRiderRoute({
 }) {
   markerRef = useRef();
   const dispatch = useDispatch();
+  const apiKey = process.env.GOOGLE_MAP_API;
   const continuousLocation = useContinuousLocation();
 
   markerRef = useRef();
@@ -42,7 +43,7 @@ export default function DriverToRiderRoute({
       <MapViewDirections
         origin={origin}
         destination={destination}
-        apikey="AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks"
+        apikey={apiKey}
         strokeColor={color}
         strokeWidth={3}
         precision="high"

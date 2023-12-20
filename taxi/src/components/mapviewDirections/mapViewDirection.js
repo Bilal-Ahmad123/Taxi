@@ -19,6 +19,7 @@ export default function MapViewDirection({
   currentLocation,
   color = '#6488ea',
 }) {
+  const apiKey = process.env.GOOGLE_MAP_API;
   const dispatch = useDispatch();
   markerRef = useRef();
   // useEffect(() => {
@@ -90,7 +91,7 @@ export default function MapViewDirection({
       <MapViewDirections
         origin={origin}
         destination={destination}
-        apikey="AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks"
+        apikey={apiKey}
         strokeColor={color}
         strokeWidth={3}
         precision="high"

@@ -22,6 +22,7 @@ export default function RiderToDestination({
 }) {
   markerRef = useRef();
   const dispatch = useDispatch();
+  const apiKey = process.env.GOOGLE_MAP_API;
 
   return (
     <Fragment>
@@ -46,7 +47,7 @@ export default function RiderToDestination({
         }}
         origin={origin}
         destination={destination}
-        apikey="AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks"
+        apikey={apiKey}
         strokeColor={color}
         strokeWidth={3}
         precision="high"

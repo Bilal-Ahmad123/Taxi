@@ -3,11 +3,12 @@ import {locationActions} from '../slices/locationSlice';
 import {store} from '../store';
 import Polyline from '@mapbox/polyline';
 import {Toast} from 'react-native-toast-notifications';
+const apiKey = process.env.GOOGLE_MAP_API;
 
 export const getOriginName = data => async dispatch => {
   axios
     .get(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.latitude},${data.longitude}&sensor=true&key=AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks`,
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.latitude},${data.longitude}&sensor=true&key=${apiKey}`,
     )
     .then(res => {
       dispatch(
@@ -25,7 +26,7 @@ export const getOriginName = data => async dispatch => {
 export const getDestinationName = data => async dispatch => {
   axios
     .get(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.latitude},${data.longitude}&sensor=true&key=AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks`,
+      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${data.latitude},${data.longitude}&sensor=true&key=${apiKey}`,
     )
     .then(res => {
       dispatch(
@@ -52,7 +53,7 @@ export const getCompleteRoute = (origin, destination) => async dispatch => {
       animationType: 'zoom-in',
     });
     let route = await axios.get(
-      `https://maps.googleapis.com/maps/api/directions/json?destination=${destination.latitude},${destination.longitude}&origin=${origin.latitude},${origin.longitude}&mode='DRIVING'&key=AIzaSyDeBrkSyDJ3rqjxYxfGTfGXbis5KdGZ9Ks`,
+      `https://maps.googleapis.com/maps/api/directions/json?destination=${destination.latitude},${destination.longitude}&origin=${origin.latitude},${origin.longitude}&mode='DRIVING'&key=${apiKey}`,
     );
     const routeArray = [];
 
