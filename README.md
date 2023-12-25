@@ -6,7 +6,7 @@ Drivers can use the in-app real time maps navigation to follow the route or they
 
 Rider App
 
-![test image size]![WhatsApp Image 2023-12-25 at 3 36 52 PM (2)](https://github.com/Bilal-Ahmad123/Taxi/assets/80017963/536178b8-a1ae-49e4-a9bc-7f52cc106651){:class="img-responsive"}
+![WhatsApp Image 2023-12-25 at 3 36 52 PM (2)](https://github.com/Bilal-Ahmad123/Taxi/assets/80017963/536178b8-a1ae-49e4-a9bc-7f52cc106651)
 ![WhatsApp Image 2023-12-25 at 3 36 53 PM](https://github.com/Bilal-Ahmad123/Taxi/assets/80017963/8f22883e-7a6b-4cb0-93c0-7a3e251899a9)
 ![WhatsApp Image 2023-12-25 at 3 36 51 PM](https://github.com/Bilal-Ahmad123/Taxi/assets/80017963/1b00ce03-2431-4e22-9c29-e3b1efbb7bed)
 ![WhatsApp Image 2023-12-25 at 3 36 51 PM (1)](https://github.com/Bilal-Ahmad123/Taxi/assets/80017963/e78189d7-16da-4cb6-b237-4d0c3998591f)
